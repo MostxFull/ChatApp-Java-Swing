@@ -2,7 +2,9 @@
 - 👀 I’m interested in Developping my skills in Web and Cybersecurity
 - 🌱 I’m currently learning about CyberSec
 
-
+HOW TO RUN IT?
+-first, launch Server.
+-then launch the clients.
 
 
 <!---
