@@ -1,23 +1,61 @@
-💬 Application de Chat Réseau en Java
-Cette application est un projet pédagogique réalisé dans le cadre de notre étude à l'ESTG, visant à mettre en pratique les concepts de programmation réseau et d’architecture client-serveur, à travers la création d’un chat simple basé sur les sockets (TCP).
+# 💬 ChatApp - Application de Chat en Java (Swing + Sockets)
 
-⚙️ Fonctionnalités principales
-✅ Connexion personnalisée : chaque utilisateur saisit son nom avant de se connecter au serveur.
+> Projet réalisé dans le cadre de notre étude à l’**ESTG**, module **Architecture Client/Serveur**.  
+> Cette application de chat simple permet de s'initier à la **programmation réseau** à l’aide des **sockets TCP**, avec une interface graphique légère en **Java Swing**.
 
-💬 Messagerie publique : tous les utilisateurs connectés peuvent s’échanger des messages visibles par tous.
+---
 
-🔒 Messagerie privée : possibilité d’envoyer un message privé à un utilisateur spécifique via /prv <id> <message>.
+## ⚙️ Démarrage rapide
 
-🧵 Multi-threading côté serveur : le serveur peut gérer plusieurs clients simultanément grâce à l'utilisation de threads.
+Deux exécutables sont fournis :
 
-🛠️ Technologies utilisées
-Langage : Java
+- `server.exe` : démarre le serveur qui gère les connexions.
+- `chatapp.exe` : lance l’interface utilisateur client.
 
-Interface utilisateur : Swing
+### 🟢 Étapes pour lancer l'application :
 
-Communication réseau : Sockets TCP
+1. **Exécuter `server.exe`**  
+   → Ouvre un terminal serveur en attente de connexions.
 
-Architecture : Client / Serveur
+2. **Exécuter `chatapp.exe`** (sur la même machine ou en réseau)  
+   → Entrez un nom d’utilisateur et cliquez sur **Connecter**.
+
+---
+
+## ✅ Fonctionnalités
+
+- 🔐 Connexion avec un nom personnalisé
+- 🧵 Support multi-clients (serveur multithread)
+- 💬 Envoi de messages publics à tous les utilisateurs connectés
+- ✉️ Envoi de messages privés avec la commande :  
+  `/prv <id> <message>`
+- 🖼️ Interface graphique simple en Java Swing
+- 🚫 Gestion des erreurs de connexion et des IDs invalides
+
+---
+
+## 🖼️ Interface
+
+- Zone de saisie de texte et bouton **Envoyer**
+- Affichage des messages en temps réel
+- Connexion par nom
+- Identifiants de chaque utilisateur pour les messages privés
+
+---
+
+## 🧪 Technologies utilisées
+
+- 💻 Java SE 8+
+- 🔌 TCP Sockets
+- 🖼️ Java Swing
+- 🧵 Threads Java
+
+---
+
+## 📝 Exemple de message privé
+
+```bash
+/prv 2 Bonjour, comment ça va ?
 
 
 <!---
